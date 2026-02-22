@@ -10,6 +10,8 @@ class PokemonSchema(BaseModel): # contrato de dados, shcema de dados que quero g
         from_attributes = True
 
 
+
+
 def capturar_pokemon(id_pokemon: int)-> PokemonSchema:
 
     response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{id_pokemon}")
